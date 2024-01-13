@@ -12,8 +12,7 @@
 <body>
 
     @yield('header')
-    <main>
-    </main>
+
     
 </body>
 </html>
