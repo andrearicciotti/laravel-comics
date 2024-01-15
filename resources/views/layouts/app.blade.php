@@ -13,6 +13,7 @@
 
     @yield('header')
 
+    @yield('comics')
     
 </body>
 </html>
