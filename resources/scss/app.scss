@@ -1,6 +1,7 @@
 @use './partials/variables' as *;
 @use './partials/mixins' as *;
 @use './partials/header' as *;
+@use './partials/footer' as *;
 @use './partials/comics' as *;
 @import "~bootstrap/scss/bootstrap";
 
@@ -11,7 +12,7 @@
 }
 
 img {
-    max-width: 100%
+    max-width: 100px;
 }
 
 body {

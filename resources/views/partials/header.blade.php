@@ -1,4 +1,3 @@
-@section('header')
 <header>
     <div class="header-top">
         <div class="ms_container">
@@ -25,4 +24,3 @@
     </nav>
 
 </header>
-@endsection

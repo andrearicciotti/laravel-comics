@@ -1,0 +1,101 @@
+@use './variables' as *;
+@use './mixins' as *;
+
+footer {  
+    .container {
+        width: 100%;
+        height: 300px;
+        background-image: url('../assets/img/footer-bg.jpg');
+        .footer-top {
+    
+            width: 70%;
+            height: 100%;
+            margin: 0 auto;
+            background-size: cover;
+            @include flex (row, space-between, center);
+    
+            .navigation, .logo {
+                width: 45%;
+                height: 100%;
+            } 
+
+            .navigation {
+                @include flex (column, start, start);
+                flex-wrap: wrap;
+                color: $white_color;
+                padding: 1.5rem 0;
+
+                ul {
+                    margin: .5rem 0;
+
+                    h4 {
+                        margin-bottom: .5rem;
+                        text-transform: uppercase;
+                    }
+
+                    li {
+                        list-style-type: none;
+
+                        a {
+                            text-decoration: none;
+                            color: inherit;
+                            font-size: .6rem;
+                            font-weight: 300;
+                        }
+                    }
+                }
+            }
+            .logo {
+                background-image: url('../assets/img/dc-logo-bg.png');
+                background-repeat: no-repeat;
+                background-size: 100%;
+                background-position: center;
+            }
+        }
+    }
+
+    .footer-bottom {
+        width: 100%;
+        height: 83px;
+        background-color: $footer_color;
+
+        .container-bottom {
+            color: $white_color;
+            width: 70%;
+            height: 100%;
+            margin: 0 auto;
+            @include flex (row, space-between, center);
+
+            .cta {
+                width: 20%;
+                @include flex (row, start, center);
+
+                a {
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-size: .8rem;
+                    color: inherit;
+                    padding: .7rem;
+                    border: 2px solid $primary_color;
+                }
+            }
+
+            .socials {
+                flex-grow: 1;
+                @include flex (row, end, center);
+                span {
+                    text-transform: uppercase;
+                    color: $primary_color;
+                    margin: 0 1rem;
+                }
+                a {
+                    padding: .5rem;
+
+                    img {
+                        height: 30px;
+                    }
+                }
+            }
+        }
+    }
+}

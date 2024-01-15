@@ -11,9 +11,11 @@
 </head>
 <body>
 
-    @yield('header')
+    @include('partials.header')
 
     @yield('comics')
     
+    @include('partials.footer')
+
 </body>
 </html>
